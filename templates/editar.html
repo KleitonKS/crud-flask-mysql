@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Criar Paciente</title>
+</head>
+<body>
+    <h1>Editar Paciente</h1>
+    <form action="/editar/{{ paciente.id }}" method="post">
+        <label for="">Nome:</label><br>
+        <input type="text" name="nome" value="{{ paciente['nome']}}"><br><br>
+        <label for="">Data de nascimento:</label><br>
+        <input type="text" name="data_nascimento" placeholder="ano-mês-dia" value="{{ paciente['data_nascimento']}}"><br><br>
+        <label for="">Endereço:</label><br>
+        <input type="text" name="endereco" value="{{ paciente['endereco']}}"><br><br>
+        <label for="">Telefone:</label><br>
+        <input type="text" name="telefone" value="{{ paciente['telefone']}}"><br><br>
+        <label for="">CPF:</label><br>
+        <input type="text" name="cpf" value="{{ paciente['cpf']}}"><br><br>
+        <input type="submit" value="Salvar">
+    </form>
+</body>
+</html>

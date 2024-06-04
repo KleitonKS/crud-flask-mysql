@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+</head>
+<body>
+    <h1 style="color: blue;">Login</h1>
+    <form action="/login" method="post">
+        <label for="">E-mail:</label><br>
+        <input type="text" name="email"><br><br>
+        <label for="">Senha:</label><br>
+        <input type="password" name="senha"><br><br>
+        {% if mensagem %}
+            <h3 style="color: red;">{{ mensagem }}</h3>
+        {% endif %}
+        <input type="submit" value="Entrar">
+    </form>
+</body>
+</html>

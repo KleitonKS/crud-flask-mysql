@@ -1,0 +1,14 @@
+1) Instalar os pacotes Flask e mysql-connector-python
+- Comando no Terminal: pip install flask mysql-connector-python
+
+2) Criar o arquivo da aplicação principal
+- Nome do arquivo: app.py
+
+3) Executar o servidor
+- Comando no Terminal: python app.py
+- Comando alternativo: flask --app app.py --debug run
+
+4) Criar uma pasta chamada "templates" e mover todos os arquivos HTML para dentro dela.
+
+5) Para criar estilos e alterar o compotamentodos elementos da página, os arquivos em CSS e JavaScript
+devem ficar em uma pasta chamada estatic
